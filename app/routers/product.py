@@ -2,7 +2,7 @@ from typing import Optional
 from fastapi import Response, status, HTTPException, Depends, APIRouter
 from app import schemas, models, oauth2
 from sqlalchemy.orm import Session
-from ..dbconn import get_db
+from app.dbconn import get_db
 
 router = APIRouter(
     prefix="/products",
